@@ -181,8 +181,8 @@ function App() {
           </div>
         </div>
       </section>
-      <div className="flex gap-4">
-        <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border">
+      <div className="flex gap-4 m-16">
+        <div className="bg-white rounded-2xl shadow-md hover:shadow-xl w-80 transition-all duration-300 p-6 border">
           {/* Image */}
           <div className="overflow-hidden rounded-xl mb-4">
             <img
@@ -210,13 +210,13 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden mb-16 w-80">
+        <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300  w-80">
           {/* Image */}
           <div className="h-48 sm:h-64 w-full overflow-hidden">
             <img
               src={image1}
               alt="Milk Tea"
-              className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
             />
           </div>
 
@@ -235,6 +235,30 @@ function App() {
                 Order
               </button>
             </div>
+          </div>
+        </div>
+        <div className="backdrop-blur-md bg-white/70 rounded-2xl border p-6 shadow-lg">
+          <h3 className="text-lg font-semibold mb-2">Fast Delivery</h3>
+          <p className="text-gray-600 text-sm">
+            Get your order delivered within 30 minutes.
+          </p>
+          <div className="overflow-hidden rounded-xl mb-4">
+            <img
+              src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg"
+              alt="Card Preview"
+              className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            Creamy and refreshing milk tea made with premium tea leaves.
+          </p>
+
+          <div className="flex justify-between items-center pt-3">
+            <span className="font-bold text-green-600">$3.50</span>
+
+            <button className="bg-green-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-green-700 transition">
+              Order
+            </button>
           </div>
         </div>
       </div>
